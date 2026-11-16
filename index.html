@@ -7,7 +7,20 @@
 </head>
 <body>
   <h1>オリジナルサイト</h1>
-  <p>はじめまして。まつながますみです。</p>
-  <p>はじめてのオリジナルサイトです！ようやく完成です！</p>
+  
+  <h2>はじめまして。まつながますみです。</h2>
+  <h2 id="message">はじめてのオリジナルサイトです！</h2>
+  <button id="change-btn">クリックしてね</button>
+   
+  <script>
+    const btn=document.getElementById('change-btn');
+    const msg=document.getElementById('message');
+
+    btn.addEventListener('click', function() {
+      msg.textContent='これからもよろしくお願いします！';
+    });
+  
+  </script>
+  
 </body>
 </html>
